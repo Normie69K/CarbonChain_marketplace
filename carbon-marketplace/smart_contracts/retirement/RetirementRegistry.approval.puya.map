@@ -1,0 +1,1725 @@
+{
+  "version": 3,
+  "sources": [
+    "contract.py"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAcA;;AAAA;AAAA;AAAA;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;AAAA;AAAA;;;;;;AAAA;;;AAAA;;;;AAAA;AAiBQ;;;;;;;AAAkC;;AAAlC;AACA;AAAkC;AAAlC;AACA;AAAkC;AAAlC;AALH;AAAA;AAQA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAkBU;AAAP;AAAA;AAEkB;;AAGlB;AAKqB;;AAJM;;AAAA;AACN;;AACA;;AACA;;;;;;;;;;AAJrB;;;;;;;AAAA;AAUA;AAEmB;;;;;;AAFnB;;;;;;AAAA;AAUI;AACA;AACA;;AADA;AAEA;;AAAA;AAFA;AAGA;;AAAA;AAHA;AAAA;;AAAA;AAIA;;AAJA;AAFJ;;AAAA;AAAA;AAWI;AAAA;AAAA;AAAA;AAAA;;AAAA;AADJ;AAAA;AAAA;AAG+B;AAAA;AAAA;AAAA;AAA+B;AAA/B;AAA/B;AAAA;AAAA;AAvDH;AAAA;AAAA;AAAA;AAAA;AAAA;AA4DA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAW8C;AAAR;AAAX;AACxB;AAGiB;AAAA;;;AACb;;AAAA;;;AACA;;AAAA;;;AAjBP;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAyBmB;AAAA;AAAA;AAAA;AAAZ;AACY;AAAA;AAAA;AAAA;AAAZ;AALP;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "algopy.arc4.ARC4Contract.approval_program",
+      "params": {},
+      "block": "main",
+      "stack_in": [],
+      "op": "intcblock 0 1 8 2"
+    },
+    "7": {
+      "op": "bytecblock \"total_tonnes_retired\" \"total_retirements\" 0x151f7c75"
+    },
+    "53": {
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "55": {
+      "op": "!",
+      "defined_out": [
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "tmp%1#1"
+      ]
+    },
+    "56": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "57": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "59": {
+      "op": "bz main_create_NoOp@9",
+      "stack_out": []
+    },
+    "62": {
+      "op": "pushbytess 0x8839f636 0x785f1e41 0xe3fee53a // method \"retire_credit(uint64,string,uint64,string)uint64\", method \"verify_retirement(uint64)(address,uint64,uint64)\", method \"get_global_stats()(uint64,uint64)\"",
+      "defined_out": [
+        "Method(get_global_stats()(uint64,uint64))",
+        "Method(retire_credit(uint64,string,uint64,string)uint64)",
+        "Method(verify_retirement(uint64)(address,uint64,uint64))"
+      ],
+      "stack_out": [
+        "Method(retire_credit(uint64,string,uint64,string)uint64)",
+        "Method(verify_retirement(uint64)(address,uint64,uint64))",
+        "Method(get_global_stats()(uint64,uint64))"
+      ]
+    },
+    "79": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(get_global_stats()(uint64,uint64))",
+        "Method(retire_credit(uint64,string,uint64,string)uint64)",
+        "Method(verify_retirement(uint64)(address,uint64,uint64))",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "Method(retire_credit(uint64,string,uint64,string)uint64)",
+        "Method(verify_retirement(uint64)(address,uint64,uint64))",
+        "Method(get_global_stats()(uint64,uint64))",
+        "tmp%4#0"
+      ]
+    },
+    "82": {
+      "op": "match retire_credit verify_retirement get_global_stats",
+      "stack_out": []
+    },
+    "90": {
+      "op": "err"
+    },
+    "91": {
+      "block": "main_create_NoOp@9",
+      "stack_in": [],
+      "op": "pushbytes 0x9c4a59bd // method \"create_registry()void\"",
+      "defined_out": [
+        "Method(create_registry()void)"
+      ],
+      "stack_out": [
+        "Method(create_registry()void)"
+      ]
+    },
+    "97": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(create_registry()void)",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "Method(create_registry()void)",
+        "tmp%5#0"
+      ]
+    },
+    "100": {
+      "op": "match create_registry",
+      "stack_out": []
+    },
+    "104": {
+      "op": "err"
+    },
+    "105": {
+      "subroutine": "smart_contracts.retirement.contract.RetirementRegistry.create_registry[routing]",
+      "params": {},
+      "block": "create_registry",
+      "stack_in": [],
+      "op": "pushbytes \"admin\"",
+      "defined_out": [
+        "\"admin\""
+      ],
+      "stack_out": [
+        "\"admin\""
+      ]
+    },
+    "112": {
+      "op": "txn Sender",
+      "defined_out": [
+        "\"admin\"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "\"admin\"",
+        "tmp%0#0"
+      ]
+    },
+    "114": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "115": {
+      "op": "bytec_0 // \"total_tonnes_retired\"",
+      "defined_out": [
+        "\"total_tonnes_retired\""
+      ],
+      "stack_out": [
+        "\"total_tonnes_retired\""
+      ]
+    },
+    "116": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "\"total_tonnes_retired\"",
+        "0"
+      ],
+      "stack_out": [
+        "\"total_tonnes_retired\"",
+        "0"
+      ]
+    },
+    "117": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "118": {
+      "op": "bytec_1 // \"total_retirements\"",
+      "defined_out": [
+        "\"total_retirements\""
+      ],
+      "stack_out": [
+        "\"total_retirements\""
+      ]
+    },
+    "119": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"total_retirements\"",
+        "0"
+      ]
+    },
+    "120": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "121": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "122": {
+      "op": "return",
+      "stack_out": []
+    },
+    "123": {
+      "subroutine": "smart_contracts.retirement.contract.RetirementRegistry.retire_credit[routing]",
+      "params": {},
+      "block": "retire_credit",
+      "stack_in": [],
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "asset_id#0"
+      ],
+      "stack_out": [
+        "asset_id#0"
+      ]
+    },
+    "126": {
+      "op": "dup",
+      "defined_out": [
+        "asset_id#0",
+        "asset_id#0 (copy)"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "asset_id#0 (copy)"
+      ]
+    },
+    "127": {
+      "op": "len",
+      "defined_out": [
+        "asset_id#0",
+        "len%0#0"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "len%0#0"
+      ]
+    },
+    "128": {
+      "op": "intc_2 // 8",
+      "defined_out": [
+        "8",
+        "asset_id#0",
+        "len%0#0"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "len%0#0",
+        "8"
+      ]
+    },
+    "129": {
+      "op": "==",
+      "defined_out": [
+        "asset_id#0",
+        "eq%0#0"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "eq%0#0"
+      ]
+    },
+    "130": {
+      "error": "invalid number of bytes for arc4.uint64",
+      "op": "assert // invalid number of bytes for arc4.uint64",
+      "stack_out": [
+        "asset_id#0"
+      ]
+    },
+    "131": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "asset_id#0",
+        "company_name#0"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "company_name#0"
+      ]
+    },
+    "134": {
+      "op": "dup",
+      "defined_out": [
+        "asset_id#0",
+        "company_name#0",
+        "company_name#0 (copy)"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "company_name#0",
+        "company_name#0 (copy)"
+      ]
+    },
+    "135": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "asset_id#0",
+        "company_name#0",
+        "company_name#0 (copy)"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "company_name#0",
+        "company_name#0 (copy)",
+        "0"
+      ]
+    },
+    "136": {
+      "error": "invalid array length header",
+      "op": "extract_uint16 // on error: invalid array length header",
+      "defined_out": [
+        "aggregate%array_length%0#0",
+        "asset_id#0",
+        "company_name#0"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "company_name#0",
+        "aggregate%array_length%0#0"
+      ]
+    },
+    "137": {
+      "op": "intc_3 // 2",
+      "defined_out": [
+        "2",
+        "aggregate%array_length%0#0",
+        "asset_id#0",
+        "company_name#0"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "company_name#0",
+        "aggregate%array_length%0#0",
+        "2"
+      ]
+    },
+    "138": {
+      "op": "+",
+      "defined_out": [
+        "add%0#0",
+        "asset_id#0",
+        "company_name#0"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "company_name#0",
+        "add%0#0"
+      ]
+    },
+    "139": {
+      "op": "swap",
+      "stack_out": [
+        "asset_id#0",
+        "add%0#0",
+        "company_name#0"
+      ]
+    },
+    "140": {
+      "op": "len",
+      "defined_out": [
+        "add%0#0",
+        "asset_id#0",
+        "len%1#0"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "add%0#0",
+        "len%1#0"
+      ]
+    },
+    "141": {
+      "op": "==",
+      "defined_out": [
+        "asset_id#0",
+        "eq%1#0"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "eq%1#0"
+      ]
+    },
+    "142": {
+      "error": "invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "op": "assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "stack_out": [
+        "asset_id#0"
+      ]
+    },
+    "143": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "asset_id#0",
+        "co2_tonnes#0"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "co2_tonnes#0"
+      ]
+    },
+    "146": {
+      "op": "dup",
+      "defined_out": [
+        "asset_id#0",
+        "co2_tonnes#0",
+        "co2_tonnes#0 (copy)"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "co2_tonnes#0",
+        "co2_tonnes#0 (copy)"
+      ]
+    },
+    "147": {
+      "op": "len",
+      "defined_out": [
+        "asset_id#0",
+        "co2_tonnes#0",
+        "len%2#0"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "co2_tonnes#0",
+        "len%2#0"
+      ]
+    },
+    "148": {
+      "op": "intc_2 // 8",
+      "stack_out": [
+        "asset_id#0",
+        "co2_tonnes#0",
+        "len%2#0",
+        "8"
+      ]
+    },
+    "149": {
+      "op": "==",
+      "defined_out": [
+        "asset_id#0",
+        "co2_tonnes#0",
+        "eq%2#0"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "co2_tonnes#0",
+        "eq%2#0"
+      ]
+    },
+    "150": {
+      "error": "invalid number of bytes for arc4.uint64",
+      "op": "assert // invalid number of bytes for arc4.uint64",
+      "stack_out": [
+        "asset_id#0",
+        "co2_tonnes#0"
+      ]
+    },
+    "151": {
+      "op": "txna ApplicationArgs 4",
+      "defined_out": [
+        "asset_id#0",
+        "co2_tonnes#0",
+        "ipfs_certificate#0"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "co2_tonnes#0",
+        "ipfs_certificate#0"
+      ]
+    },
+    "154": {
+      "op": "dup",
+      "defined_out": [
+        "asset_id#0",
+        "co2_tonnes#0",
+        "ipfs_certificate#0",
+        "ipfs_certificate#0 (copy)"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "co2_tonnes#0",
+        "ipfs_certificate#0",
+        "ipfs_certificate#0 (copy)"
+      ]
+    },
+    "155": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "asset_id#0",
+        "co2_tonnes#0",
+        "ipfs_certificate#0",
+        "ipfs_certificate#0 (copy)",
+        "0"
+      ]
+    },
+    "156": {
+      "error": "invalid array length header",
+      "op": "extract_uint16 // on error: invalid array length header",
+      "defined_out": [
+        "aggregate%array_length%1#0",
+        "asset_id#0",
+        "co2_tonnes#0",
+        "ipfs_certificate#0"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "co2_tonnes#0",
+        "ipfs_certificate#0",
+        "aggregate%array_length%1#0"
+      ]
+    },
+    "157": {
+      "op": "intc_3 // 2",
+      "stack_out": [
+        "asset_id#0",
+        "co2_tonnes#0",
+        "ipfs_certificate#0",
+        "aggregate%array_length%1#0",
+        "2"
+      ]
+    },
+    "158": {
+      "op": "+",
+      "defined_out": [
+        "add%1#0",
+        "asset_id#0",
+        "co2_tonnes#0",
+        "ipfs_certificate#0"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "co2_tonnes#0",
+        "ipfs_certificate#0",
+        "add%1#0"
+      ]
+    },
+    "159": {
+      "op": "swap",
+      "stack_out": [
+        "asset_id#0",
+        "co2_tonnes#0",
+        "add%1#0",
+        "ipfs_certificate#0"
+      ]
+    },
+    "160": {
+      "op": "len",
+      "defined_out": [
+        "add%1#0",
+        "asset_id#0",
+        "co2_tonnes#0",
+        "len%3#0"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "co2_tonnes#0",
+        "add%1#0",
+        "len%3#0"
+      ]
+    },
+    "161": {
+      "op": "==",
+      "defined_out": [
+        "asset_id#0",
+        "co2_tonnes#0",
+        "eq%3#0"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "co2_tonnes#0",
+        "eq%3#0"
+      ]
+    },
+    "162": {
+      "error": "invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "op": "assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "stack_out": [
+        "asset_id#0",
+        "co2_tonnes#0"
+      ]
+    },
+    "163": {
+      "op": "btoi",
+      "defined_out": [
+        "asset_id#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "tmp%0#1"
+      ]
+    },
+    "164": {
+      "op": "dup",
+      "defined_out": [
+        "asset_id#0",
+        "tmp%0#1",
+        "tmp%0#1 (copy)"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "tmp%0#1",
+        "tmp%0#1 (copy)"
+      ]
+    },
+    "165": {
+      "error": "Invalid tonnes",
+      "op": "assert // Invalid tonnes",
+      "stack_out": [
+        "asset_id#0",
+        "tmp%0#1"
+      ]
+    },
+    "166": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "asset_id#0",
+        "retirement_time#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "tmp%0#1",
+        "retirement_time#0"
+      ]
+    },
+    "168": {
+      "op": "itxn_begin"
+    },
+    "169": {
+      "op": "global MinTxnFee",
+      "defined_out": [
+        "asset_id#0",
+        "inner_txn_params%0%%param_Fee_idx_0#0",
+        "retirement_time#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "tmp%0#1",
+        "retirement_time#0",
+        "inner_txn_params%0%%param_Fee_idx_0#0"
+      ]
+    },
+    "171": {
+      "op": "uncover 3",
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "inner_txn_params%0%%param_Fee_idx_0#0",
+        "asset_id#0"
+      ]
+    },
+    "173": {
+      "op": "btoi",
+      "defined_out": [
+        "inner_txn_params%0%%param_Fee_idx_0#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0",
+        "retirement_time#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "inner_txn_params%0%%param_Fee_idx_0#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0"
+      ]
+    },
+    "174": {
+      "op": "txn Sender",
+      "defined_out": [
+        "inner_txn_params%0%%param_AssetSender_idx_0#0",
+        "inner_txn_params%0%%param_Fee_idx_0#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0",
+        "retirement_time#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "inner_txn_params%0%%param_Fee_idx_0#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0",
+        "inner_txn_params%0%%param_AssetSender_idx_0#0"
+      ]
+    },
+    "176": {
+      "op": "global CurrentApplicationAddress",
+      "defined_out": [
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
+        "inner_txn_params%0%%param_AssetSender_idx_0#0",
+        "inner_txn_params%0%%param_Fee_idx_0#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0",
+        "retirement_time#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "inner_txn_params%0%%param_Fee_idx_0#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0",
+        "inner_txn_params%0%%param_AssetSender_idx_0#0",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
+      ]
+    },
+    "178": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
+        "inner_txn_params%0%%param_AssetSender_idx_0#0",
+        "inner_txn_params%0%%param_Fee_idx_0#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0",
+        "retirement_time#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "inner_txn_params%0%%param_Fee_idx_0#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0",
+        "inner_txn_params%0%%param_AssetSender_idx_0#0",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
+        "1"
+      ]
+    },
+    "179": {
+      "op": "itxn_field AssetAmount",
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "inner_txn_params%0%%param_Fee_idx_0#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0",
+        "inner_txn_params%0%%param_AssetSender_idx_0#0",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
+      ]
+    },
+    "181": {
+      "op": "itxn_field AssetReceiver",
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "inner_txn_params%0%%param_Fee_idx_0#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0",
+        "inner_txn_params%0%%param_AssetSender_idx_0#0"
+      ]
+    },
+    "183": {
+      "op": "itxn_field AssetSender",
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "inner_txn_params%0%%param_Fee_idx_0#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0"
+      ]
+    },
+    "185": {
+      "op": "dup",
+      "defined_out": [
+        "inner_txn_params%0%%param_Fee_idx_0#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0 (copy)",
+        "retirement_time#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "inner_txn_params%0%%param_Fee_idx_0#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0 (copy)"
+      ]
+    },
+    "186": {
+      "op": "itxn_field XferAsset",
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "inner_txn_params%0%%param_Fee_idx_0#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0"
+      ]
+    },
+    "188": {
+      "op": "pushint 4 // axfer",
+      "defined_out": [
+        "axfer",
+        "inner_txn_params%0%%param_Fee_idx_0#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0",
+        "retirement_time#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "inner_txn_params%0%%param_Fee_idx_0#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0",
+        "axfer"
+      ]
+    },
+    "190": {
+      "op": "itxn_field TypeEnum",
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "inner_txn_params%0%%param_Fee_idx_0#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0"
+      ]
+    },
+    "192": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0",
+        "inner_txn_params%0%%param_Fee_idx_0#0"
+      ]
+    },
+    "193": {
+      "op": "itxn_field Fee",
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0"
+      ]
+    },
+    "195": {
+      "op": "itxn_submit"
+    },
+    "196": {
+      "op": "itxn_begin"
+    },
+    "197": {
+      "op": "global MinTxnFee",
+      "defined_out": [
+        "inner_txn_params%0%%param_XferAsset_idx_0#0",
+        "inner_txn_params%1%%param_Fee_idx_0#0",
+        "retirement_time#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0",
+        "inner_txn_params%1%%param_Fee_idx_0#0"
+      ]
+    },
+    "199": {
+      "op": "dig 1",
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0",
+        "inner_txn_params%1%%param_Fee_idx_0#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0 (copy)"
+      ]
+    },
+    "201": {
+      "op": "itxn_field ConfigAsset",
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0",
+        "inner_txn_params%1%%param_Fee_idx_0#0"
+      ]
+    },
+    "203": {
+      "op": "pushint 3 // acfg",
+      "defined_out": [
+        "acfg",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0",
+        "inner_txn_params%1%%param_Fee_idx_0#0",
+        "retirement_time#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0",
+        "inner_txn_params%1%%param_Fee_idx_0#0",
+        "acfg"
+      ]
+    },
+    "205": {
+      "op": "itxn_field TypeEnum",
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0",
+        "inner_txn_params%1%%param_Fee_idx_0#0"
+      ]
+    },
+    "207": {
+      "op": "itxn_field Fee",
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "inner_txn_params%0%%param_XferAsset_idx_0#0"
+      ]
+    },
+    "209": {
+      "op": "itxn_submit"
+    },
+    "210": {
+      "op": "itob",
+      "defined_out": [
+        "retirement_time#0",
+        "tmp%0#1",
+        "tmp%4#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "tmp%4#1"
+      ]
+    },
+    "211": {
+      "op": "dup"
+    },
+    "212": {
+      "op": "txn Sender",
+      "defined_out": [
+        "retirement_time#0",
+        "tmp%0#1",
+        "tmp%4#1",
+        "tmp%4#1 (copy)",
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "tmp%4#1",
+        "tmp%4#1 (copy)",
+        "tmp%7#0"
+      ]
+    },
+    "214": {
+      "op": "concat",
+      "defined_out": [
+        "retirement_time#0",
+        "tmp%0#1",
+        "tmp%4#1",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "tmp%4#1",
+        "tmp%8#0"
+      ]
+    },
+    "215": {
+      "op": "dig 3",
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "tmp%4#1",
+        "tmp%8#0",
+        "tmp%0#1 (copy)"
+      ]
+    },
+    "217": {
+      "op": "itob",
+      "defined_out": [
+        "retirement_time#0",
+        "tmp%0#1",
+        "tmp%10#0",
+        "tmp%4#1",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "tmp%4#1",
+        "tmp%8#0",
+        "tmp%10#0"
+      ]
+    },
+    "218": {
+      "op": "concat",
+      "defined_out": [
+        "retirement_time#0",
+        "tmp%0#1",
+        "tmp%11#0",
+        "tmp%4#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "retirement_time#0",
+        "tmp%4#1",
+        "tmp%11#0"
+      ]
+    },
+    "219": {
+      "op": "uncover 2",
+      "stack_out": [
+        "tmp%0#1",
+        "tmp%4#1",
+        "tmp%11#0",
+        "retirement_time#0"
+      ]
+    },
+    "221": {
+      "op": "itob",
+      "defined_out": [
+        "tmp%0#1",
+        "tmp%11#0",
+        "tmp%12#0",
+        "tmp%4#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "tmp%4#1",
+        "tmp%11#0",
+        "tmp%12#0"
+      ]
+    },
+    "222": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%0#1",
+        "tmp%4#1",
+        "tmp%12#0",
+        "tmp%11#0"
+      ]
+    },
+    "223": {
+      "op": "dig 1",
+      "defined_out": [
+        "tmp%0#1",
+        "tmp%11#0",
+        "tmp%12#0",
+        "tmp%12#0 (copy)",
+        "tmp%4#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "tmp%4#1",
+        "tmp%12#0",
+        "tmp%11#0",
+        "tmp%12#0 (copy)"
+      ]
+    },
+    "225": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#1",
+        "tmp%12#0",
+        "tmp%13#0",
+        "tmp%4#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "tmp%4#1",
+        "tmp%12#0",
+        "tmp%13#0"
+      ]
+    },
+    "226": {
+      "op": "txn TxID",
+      "defined_out": [
+        "tmp%0#1",
+        "tmp%12#0",
+        "tmp%13#0",
+        "tmp%14#0",
+        "tmp%4#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "tmp%4#1",
+        "tmp%12#0",
+        "tmp%13#0",
+        "tmp%14#0"
+      ]
+    },
+    "228": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#1",
+        "tmp%12#0",
+        "tmp%15#0",
+        "tmp%4#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "tmp%4#1",
+        "tmp%12#0",
+        "tmp%15#0"
+      ]
+    },
+    "229": {
+      "op": "uncover 2",
+      "stack_out": [
+        "tmp%0#1",
+        "tmp%12#0",
+        "tmp%15#0",
+        "tmp%4#1"
+      ]
+    },
+    "231": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%0#1",
+        "tmp%12#0",
+        "tmp%4#1",
+        "tmp%15#0"
+      ]
+    },
+    "232": {
+      "op": "box_put",
+      "stack_out": [
+        "tmp%0#1",
+        "tmp%12#0"
+      ]
+    },
+    "233": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%0#1",
+        "tmp%12#0",
+        "0"
+      ]
+    },
+    "234": {
+      "op": "bytec_0 // \"total_tonnes_retired\"",
+      "defined_out": [
+        "\"total_tonnes_retired\"",
+        "0",
+        "tmp%0#1",
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "tmp%12#0",
+        "0",
+        "\"total_tonnes_retired\""
+      ]
+    },
+    "235": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "tmp%0#1",
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "tmp%12#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "236": {
+      "error": "check self.total_tonnes_retired exists",
+      "op": "assert // check self.total_tonnes_retired exists",
+      "stack_out": [
+        "tmp%0#1",
+        "tmp%12#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "237": {
+      "op": "uncover 2",
+      "stack_out": [
+        "tmp%12#0",
+        "maybe_value%0#0",
+        "tmp%0#1"
+      ]
+    },
+    "239": {
+      "op": "+",
+      "defined_out": [
+        "tmp%12#0",
+        "tmp%17#0"
+      ],
+      "stack_out": [
+        "tmp%12#0",
+        "tmp%17#0"
+      ]
+    },
+    "240": {
+      "op": "bytec_0 // \"total_tonnes_retired\"",
+      "stack_out": [
+        "tmp%12#0",
+        "tmp%17#0",
+        "\"total_tonnes_retired\""
+      ]
+    },
+    "241": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%12#0",
+        "\"total_tonnes_retired\"",
+        "tmp%17#0"
+      ]
+    },
+    "242": {
+      "op": "app_global_put",
+      "stack_out": [
+        "tmp%12#0"
+      ]
+    },
+    "243": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%12#0",
+        "0"
+      ]
+    },
+    "244": {
+      "op": "bytec_1 // \"total_retirements\"",
+      "defined_out": [
+        "\"total_retirements\"",
+        "0",
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "tmp%12#0",
+        "0",
+        "\"total_retirements\""
+      ]
+    },
+    "245": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0",
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "tmp%12#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "246": {
+      "error": "check self.total_retirements exists",
+      "op": "assert // check self.total_retirements exists",
+      "stack_out": [
+        "tmp%12#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "247": {
+      "op": "intc_1 // 1",
+      "stack_out": [
+        "tmp%12#0",
+        "maybe_value%1#0",
+        "1"
+      ]
+    },
+    "248": {
+      "op": "+",
+      "defined_out": [
+        "tmp%12#0",
+        "tmp%18#0"
+      ],
+      "stack_out": [
+        "tmp%12#0",
+        "tmp%18#0"
+      ]
+    },
+    "249": {
+      "op": "bytec_1 // \"total_retirements\"",
+      "stack_out": [
+        "tmp%12#0",
+        "tmp%18#0",
+        "\"total_retirements\""
+      ]
+    },
+    "250": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%12#0",
+        "\"total_retirements\"",
+        "tmp%18#0"
+      ]
+    },
+    "251": {
+      "op": "app_global_put",
+      "stack_out": [
+        "tmp%12#0"
+      ]
+    },
+    "252": {
+      "op": "bytec_2 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "tmp%12#0",
+        "0x151f7c75"
+      ]
+    },
+    "253": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "tmp%12#0"
+      ]
+    },
+    "254": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "255": {
+      "op": "log",
+      "stack_out": []
+    },
+    "256": {
+      "op": "intc_1 // 1",
+      "stack_out": [
+        "1"
+      ]
+    },
+    "257": {
+      "op": "return",
+      "stack_out": []
+    },
+    "258": {
+      "subroutine": "smart_contracts.retirement.contract.RetirementRegistry.verify_retirement[routing]",
+      "params": {},
+      "block": "verify_retirement",
+      "stack_in": [],
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "asset_id#0"
+      ],
+      "stack_out": [
+        "asset_id#0"
+      ]
+    },
+    "261": {
+      "op": "dup",
+      "defined_out": [
+        "asset_id#0",
+        "asset_id#0 (copy)"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "asset_id#0 (copy)"
+      ]
+    },
+    "262": {
+      "op": "len",
+      "defined_out": [
+        "asset_id#0",
+        "len%0#0"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "len%0#0"
+      ]
+    },
+    "263": {
+      "op": "intc_2 // 8",
+      "defined_out": [
+        "8",
+        "asset_id#0",
+        "len%0#0"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "len%0#0",
+        "8"
+      ]
+    },
+    "264": {
+      "op": "==",
+      "defined_out": [
+        "asset_id#0",
+        "eq%0#0"
+      ],
+      "stack_out": [
+        "asset_id#0",
+        "eq%0#0"
+      ]
+    },
+    "265": {
+      "error": "invalid number of bytes for arc4.uint64",
+      "op": "assert // invalid number of bytes for arc4.uint64",
+      "stack_out": [
+        "asset_id#0"
+      ]
+    },
+    "266": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "267": {
+      "op": "itob",
+      "defined_out": [
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "tmp%1#1"
+      ]
+    },
+    "268": {
+      "op": "box_get",
+      "defined_out": [
+        "box_exists#0",
+        "box_value#0"
+      ],
+      "stack_out": [
+        "box_value#0",
+        "box_exists#0"
+      ]
+    },
+    "269": {
+      "error": "Retirement certificate not found",
+      "op": "assert // Retirement certificate not found",
+      "stack_out": [
+        "box_value#0"
+      ]
+    },
+    "270": {
+      "op": "dup",
+      "defined_out": [
+        "box_value#0",
+        "box_value#0 (copy)"
+      ],
+      "stack_out": [
+        "box_value#0",
+        "box_value#0 (copy)"
+      ]
+    },
+    "271": {
+      "op": "extract 8 32",
+      "defined_out": [
+        "awst_tmp%0#0",
+        "box_value#0"
+      ],
+      "stack_out": [
+        "box_value#0",
+        "awst_tmp%0#0"
+      ]
+    },
+    "274": {
+      "op": "dig 1",
+      "stack_out": [
+        "box_value#0",
+        "awst_tmp%0#0",
+        "box_value#0 (copy)"
+      ]
+    },
+    "276": {
+      "op": "extract 40 8",
+      "defined_out": [
+        "aggregate%val_as_bytes%0#0",
+        "awst_tmp%0#0",
+        "box_value#0"
+      ],
+      "stack_out": [
+        "box_value#0",
+        "awst_tmp%0#0",
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "279": {
+      "op": "uncover 2",
+      "stack_out": [
+        "awst_tmp%0#0",
+        "aggregate%val_as_bytes%0#0",
+        "box_value#0"
+      ]
+    },
+    "281": {
+      "op": "extract 48 8",
+      "defined_out": [
+        "aggregate%val_as_bytes%0#0",
+        "aggregate%val_as_bytes%1#0",
+        "awst_tmp%0#0"
+      ],
+      "stack_out": [
+        "awst_tmp%0#0",
+        "aggregate%val_as_bytes%0#0",
+        "aggregate%val_as_bytes%1#0"
+      ]
+    },
+    "284": {
+      "op": "cover 2",
+      "stack_out": [
+        "aggregate%val_as_bytes%1#0",
+        "awst_tmp%0#0",
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "286": {
+      "op": "concat",
+      "defined_out": [
+        "aggregate%head%1#0",
+        "aggregate%val_as_bytes%1#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%1#0",
+        "aggregate%head%1#0"
+      ]
+    },
+    "287": {
+      "op": "swap",
+      "stack_out": [
+        "aggregate%head%1#0",
+        "aggregate%val_as_bytes%1#0"
+      ]
+    },
+    "288": {
+      "op": "concat",
+      "defined_out": [
+        "aggregate%head%2#0"
+      ],
+      "stack_out": [
+        "aggregate%head%2#0"
+      ]
+    },
+    "289": {
+      "op": "bytec_2 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "aggregate%head%2#0"
+      ],
+      "stack_out": [
+        "aggregate%head%2#0",
+        "0x151f7c75"
+      ]
+    },
+    "290": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "aggregate%head%2#0"
+      ]
+    },
+    "291": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "292": {
+      "op": "log",
+      "stack_out": []
+    },
+    "293": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "294": {
+      "op": "return",
+      "stack_out": []
+    },
+    "295": {
+      "subroutine": "smart_contracts.retirement.contract.RetirementRegistry.get_global_stats[routing]",
+      "params": {},
+      "block": "get_global_stats",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "296": {
+      "op": "bytec_0 // \"total_tonnes_retired\"",
+      "defined_out": [
+        "\"total_tonnes_retired\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"total_tonnes_retired\""
+      ]
+    },
+    "297": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "298": {
+      "error": "check self.total_tonnes_retired exists",
+      "op": "assert // check self.total_tonnes_retired exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "299": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "300": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0",
+        "0"
+      ]
+    },
+    "301": {
+      "op": "bytec_1 // \"total_retirements\"",
+      "defined_out": [
+        "\"total_retirements\"",
+        "0",
+        "aggregate%val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0",
+        "0",
+        "\"total_retirements\""
+      ]
+    },
+    "302": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "aggregate%val_as_bytes%0#0",
+        "maybe_exists%1#0",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "303": {
+      "error": "check self.total_retirements exists",
+      "op": "assert // check self.total_retirements exists",
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "304": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%val_as_bytes%0#0",
+        "aggregate%val_as_bytes%1#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0",
+        "aggregate%val_as_bytes%1#0"
+      ]
+    },
+    "305": {
+      "op": "concat",
+      "defined_out": [
+        "aggregate%head%1#0"
+      ],
+      "stack_out": [
+        "aggregate%head%1#0"
+      ]
+    },
+    "306": {
+      "op": "bytec_2 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "aggregate%head%1#0"
+      ],
+      "stack_out": [
+        "aggregate%head%1#0",
+        "0x151f7c75"
+      ]
+    },
+    "307": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "aggregate%head%1#0"
+      ]
+    },
+    "308": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "309": {
+      "op": "log",
+      "stack_out": []
+    },
+    "310": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "311": {
+      "op": "return",
+      "stack_out": []
+    }
+  }
+}
