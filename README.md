@@ -1,9 +1,3 @@
-Here is a comprehensive, deep-dive documentation structured specifically to meet and exceed every evaluation criterion and mandatory requirement for the **RIFT 2026 Hackathon**.
-
-You can copy and paste this directly into your `README.md`. Be sure to replace the placeholder links (like your video and live URLs) before submission.
-
----
-
 # 🌿 CarbonChain Marketplace
 
 ## 📖 Project Description
